@@ -7,7 +7,10 @@ import { NativeAudio } from '@awesome-cordova-plugins/native-audio/ngx';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
+
 export class HomePage {
+  
 
   constructor(private nativeAudio: NativeAudio) { }
 
@@ -22,5 +25,8 @@ export class HomePage {
   ionViewWillend(){
     this.nativeAudio.unload('num1')
   }
+
+ 
+
 
 }
